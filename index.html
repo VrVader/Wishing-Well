@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishing Well</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        main {
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .section {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .section h3 {
+            margin-bottom: 10px;
+        }
+        .features, .testimonials, .cta {
+            background: url('https://www.example.com/path-to-your-background-image.jpg') no-repeat center center;
+            background-size: cover;
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+            padding: 30px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+        }
+        .warm-tone {
+            background-color: #FFF7E6;
+        }
+        .cta button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .cta button:hover {
+            background-color: #45a049;
+        }
+        .profile-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile-info img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile-details {
+            flex: 1;
+        }
+        .profile-details h3 {
+            margin-top: 0;
+        }
+        .profile-details p {
+            margin-bottom: 10px;
+        }
+        .wishlist-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f5f5f5;
+        }
+        .wishlist-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+        .wishlist-item .item-info {
+            flex: 1;
+        }
+        .wishlist-item .item-info h4 {
+            margin-top: 0;
+        }
+        .wishlist-item .item-info p {
+            margin-bottom: 5px;
+        }
+        .wishlist-item .item-info a {
+            display: inline-block;
+            margin-top: 5px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+        }
+        .wishlist-item .item-info a:hover {
+            background-color: #45a049;
+        }
+        .listing {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f5f5f5;
+        }
+        .listing img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+        .listing .listing-info {
+            flex: 1;
+        }
+        .listing .listing-info h4 {
+            margin-top: 0;
+        }
+        .listing .listing-info p {
+            margin-bottom: 5px;
+        }
+        .listing .listing-info .button-container {
+            margin-top: 10px;
+        }
+        .listing .listing-info .button-container button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .listing .listing-info .button-container button:hover {
+            background-color: #45a049;
+        }
+        .listing .listing-info .button-container a {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .listing .listing-info .button-container a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Wishing Well</h1>
+    <p>Your all-in-one platform for managing gift giving</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#explore">Explore</a>
+    <a href="#profile">Profile</a>
+    <a href="#wishlists">Wishlists</a>
+</nav>
+
+<main id="home" class="container">
+    <h2>Welcome to Wishing Well</h2>
+    <div class="section warm-tone">
+        <h3>Why Choose Wishing Well?</h3>
+        <p>Wishing Well helps you create and share wishlists, organize Secret Santas, and manage wedding registries all in one place. Our platform is designed to make gift-giving a joyful and effortless experience.</p>
+        <p>Imagine having all your gift-giving needs organized in a single, convenient location. Whether you're planning a birthday party, a holiday gathering, or a wedding, Wishing Well makes it easy to create detailed wishlists, share them with friends and family, and keep track of what has been purchased. No more duplicate gifts or guessing what someone might like.</p>
+        <p>For example, consider a family preparing for Christmas. Each member can create their own wishlist, adding items from various stores, whether it's Amazon, Etsy, or a local boutique. They can then share their lists with each other, ensuring everyone gets something they truly want while also supporting diverse retailers.</p>
+        <p>Or picture an office Secret Santa where Wishing Well simplifies the process of drawing names and setting spending limits. Participants can add items to their wishlists, making it easier for their Secret Santa to choose the perfect gift.</p>
+        <p>From birthdays to weddings, and every celebration in between, Wishing Well helps you manage it all effortlessly.</p>
+    </div>
+    <div class="section features warm-tone">
+        <h3>Features</h3>
+        <ul>
+            <li>Create and share personalized wishlists: Add items from any online store, ensuring you get exactly what you want.</li>
+            <li>Organize Secret Santas: Effortlessly draw names, set spending limits, and keep the gift exchange fun and fair.</li>
+            <li>Manage wedding registries: Combine items from various retailers into one comprehensive registry.</li>
+            <li>Support local businesses: Add products from small, independent stores, promoting a healthier and more diverse economy.</li>
+            <li>Track gift purchases: Keep track of what has been bought and by whom, avoiding duplicates and ensuring every gift is accounted for.</li>
+            <li>Receive notifications: Get notified when items on your wishlist go on sale or when a purchase is made.</li>
+            <li>Privacy controls: Choose who can see your wishlists and manage access permissions easily.</li>
+        </ul>
+    </div>
+    <div class="section testimonials warm-tone">
+        <h3>Testimonials</h3>
+        <p>"Wishing Well made my wedding registry so easy to manage!" - Emily R. <em>(d.p.)</em></p>
+        <p>"I love being able to add items from different stores to my wishlist." - John D. <em>(d.p.)</em></p>
+        <p>"Organizing our office Secret Santa was a breeze thanks to Wishing Well!" - Sarah K. <em>(d.p.)</em></p>
+    </div>
+    <div class="section cta warm-tone">
+        <h3>Get Started Today!</h3>
+        <p>Join Wishing Well and start managing your gift-giving effortlessly. Create your first wishlist, organize a Secret Santa, or set up your wedding registry now.</p>
+        <button>Sign Up Now</button>
+    </div>
+</main>
+
+<main id="about" class="container" style="display:none;">
+    <h2>About Wishing Well</h2>
+    <div class="section mission warm-tone">
+        <h3>Our Mission</h3>
+        <p>At Wishing Well, our mission is to make gift-giving a joyful and effortless experience. We aim to simplify the process of creating and sharing wishlists, organizing Secret Santas, and managing wedding registries, all while supporting a diverse range of stores and vendors.</p>
+    </div>
+    <div class="section vision warm-tone">
+        <h3>Our Vision</h3>
+        <p>We envision a world where gift-giving is seamless and inclusive, fostering connections and happiness. By allowing users to add products from a variety of stores, we support local businesses and promote a healthier, more diverse economy.</p>
+    </div>
+    <div class="section story warm-tone">
+        <h3>Our Story</h3>
+        <p>Wishing Well was born out of the frustration of being limited to a single retailer's wishlist. Our founder wanted to create a platform where users could gather gift ideas from any store, promoting variety and choice. Today, Wishing Well stands as a testament to that vision, offering users the freedom to choose gifts from any vendor they prefer.</p>
+    </div>
+</main>
+
+<main id="explore" class="container" style="display:none;">
+    <h2>Explore</h2>
+    <div class="section">
+        <div class="listing">
+            <img src="https://via.placeholder.com/100" alt="Product Image">
+            <div class="listing-info">
+                <h4>Product Title 1</h4>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Price: $XX.XX</p>
+                <div class="button-container">
+                    <button>Add to Wishlist</button>
+                    <a href="#" target="_blank"><button>View on Store</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="listing">
+            <img src="https://via.placeholder.com/100" alt="Product Image">
+            <div class="listing-info">
+                <h4>Product Title 2</h4>
+                <p>Description: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Price: $YY.YY</p>
+                <div class="button-container">
+                    <button>Add to Wishlist</button>
+                    <a href="#" target="_blank"><button>View on Store</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="listing">
+            <img src="https://via.placeholder.com/100" alt="Product Image">
+            <div class="listing-info">
+                <h4>Product Title 3</h4>
+                <p>Description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Price: $ZZ.ZZ</p>
+                <div class="button-container">
+                    <button>Add to Wishlist</button>
+                    <a href="#" target="_blank"><button>View on Store</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<main id="profile" class="container" style="display:none;">
+    <h2>Your Profile</h2>
+    <div class="section warm-tone">
+        <div class="profile-info">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture">
+            <div class="profile-details">
+                <h3>Username: JohnDoe</h3>
+                <p>Email: john.doe@example.com</p>
+                <p>Location: City, Country</p>
+                <p>Member Since: January 2023</p>
+                <p>About Me: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <h3>Your Wishlists</h3>
+        <div class="wishlist-item">
+            <img src="https://via.placeholder.com/100" alt="Christmas Wishlist">
+            <div class="item-info">
+                <h4>Christmas Wishlist</h4>
+                <p>Created: December 2023</p>
+                <p>Items: 5</p>
+                <a href="#" target="_blank">View Wishlist</a>
+            </div>
+        </div>
+        <div class="wishlist-item">
+            <img src="https://via.placeholder.com/100" alt="Birthday Wishlist">
+            <div class="item-info">
+                <h4>Birthday Wishlist</h4>
+                <p>Created: March 2024</p>
+                <p>Items: 3</p>
+                <a href="#" target="_blank">View Wishlist</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<main id="wishlists" class="container" style="display:none;">
+    <h2>Your Wishlists</h2>
+    <div class="wishlist-item">
+        <img src="https://via.placeholder.com/100" alt="Christmas Wishlist">
+        <div class="item-info">
+            <h4>Christmas Wishlist</h4>
+            <p>Created: December 2023</p>
+            <p>Items: 5</p>
+            <div class="button-container">
+                <a href="#" target="_blank">View Wishlist</a>
+            </div>
+        </div>
+    </div>
+    <div class="wishlist-item">
+        <img src="https://via.placeholder.com/100" alt="Birthday Wishlist">
+        <div class="item-info">
+            <h4>Birthday Wishlist</h4>
+            <p>Created: March 2024</p>
+            <p>Items: 3</p>
+            <div class="button-container">
+                <a href="#" target="_blank">View Wishlist</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Wishing Well</p>
+</footer>
+
+<script>
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelectorAll('main').forEach(section => section.style.display = 'none');
+            document.querySelector(this.getAttribute('href')).style.display = 'block';
+        });
+    });
+</script>
+
+</body>
+</html>
